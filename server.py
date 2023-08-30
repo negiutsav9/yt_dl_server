@@ -15,7 +15,6 @@ def createStream():
     try:
         yt = YouTube(url)
         test = yt.streams.fmt_streams
-        print(test)
     except exceptions.AgeRestrictedError:
         return jsonify({'error': "Age Restricted"})
     except exceptions.ExtractError:
