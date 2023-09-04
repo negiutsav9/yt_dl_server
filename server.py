@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 CORS(app, supports_credentials=True, allow_headers='Content-Type')
 
-@app.route('/wakeup', method=['GET'])
+@app.route('/wakeup', methods=['GET'])
 @cross_origin(supports_credentials=True)
 def wakeup():
     return jsonify({'status':'ready'})
