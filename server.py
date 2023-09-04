@@ -7,6 +7,11 @@ app = Flask(__name__)
 
 CORS(app, supports_credentials=True, allow_headers='Content-Type')
 
+@app.route('/wakeup', method=['GET'])
+@cross_origin(supports_credentials=True)
+def wakeup():
+    return jsonify({'status':'ready'})
+
 @app.route('/url', methods=['POST'])
 @cross_origin(supports_credentials=True)
 def createStream():
