@@ -28,4 +28,4 @@ The application uses Next.js as the frontend which is deployed on a Vercel serve
 The application has a potential to download video from other sites such as Facebook, Vimeo and Instagram. Furthermore, the application currently supports lower resolution videos as the server is sending PyTube progressive streams. PyTube does offer support for adaptive streams for higher resolution; however, a way has to be devised to combine the audio and video streams which are seperately provided by PyTube. 
 
 ## Reference
-The source code for the Youtube Downloader front-end can be accessed here: [ytdl_server](https://github.com/negiutsav9/yt_downloader)
+The source code for the Youtube Downloader front-end can be accessed here: [ytdl_downloader](https://github.com/negiutsav9/yt_downloader)
